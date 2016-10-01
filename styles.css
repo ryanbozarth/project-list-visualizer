@@ -1,8 +1,55 @@
 * {
   box-sizing: border-box;
-  /* outline: solid 1px red; */
+  outline: solid 1px red;
+}
+
+body {
+  background-color: #000;
+}
+
+h1, h3, p{
+  font-family: helvetica;
+  color: #fff;
 }
 
 h1 {
-  color: red;
+  font-size: 76px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.table-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row {
+  flex-wrap: nowrap;
+}
+
+.flex-item {
+  height: 100px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  width: 100px;
+}
+.status {
+  width: 125px;
+}
+.project-name {
+  width: 400px;
+}
+.launch-date{
+  width: 125px;
+}
+.team{
+  width: 125px;
+}
+.remarks{
+  width: 400px;
 }
