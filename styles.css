@@ -24,10 +24,7 @@ h3 {
 .table-container {
   display: flex;
   flex-flow: row wrap;
-}
-
-.row {
-  flex-wrap: nowrap;
+  min-width: 1200px;
 }
 
 .flex-item {
