@@ -1,3 +1,50 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Global Styles*/
+
 * {
   box-sizing: border-box;
   outline: solid 1px red;
@@ -12,24 +59,29 @@ h1, h3, p{
   color: #fff;
 }
 
+/*Layout Styles*/
+
 h1 {
   font-size: 76px;
   letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 h3 {
-  margin: 0;
+
+  margin-bottom: 10px;
 }
 
 .table-container {
   display: flex;
   flex-flow: row wrap;
   min-width: 1200px;
+  outline: white solid 2px;
 }
 
 .flex-item {
-  height: 100px;
-  line-height: 100px;
+  height: 300px;
   color: white;
   font-weight: bold;
   font-size: 1em;
@@ -38,7 +90,7 @@ h3 {
 .status {
   width: 125px;
 }
-.project-name {
+.project {
   width: 400px;
 }
 .launch-date{
@@ -49,4 +101,8 @@ h3 {
 }
 .remarks{
   width: 400px;
+}
+
+.line-item{
+  height: 50px;
 }
