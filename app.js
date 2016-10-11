@@ -21,10 +21,13 @@ $(function() {
             console.log(data[i].status);
         if (data[i].status == "Red") {
             $('.status-color').css("background-color", "red");
+            $('.status-color').css("color", "red");
         } else if (data[i].status == "Yellow") {
             $('.status-color').css("background-color", "yellow");
+            $('.status-color').css("color", "yellow");
         } else {
             $('.status-color').css("background-color", "green");
+            $('.status-color').css("color", "green");
         }
 
         }
