@@ -13,7 +13,8 @@ $(function() {
 
     function showInfo(data, tabletop) {
         for (var i = 0; i < data.length; i++) {
-            $('.project-status').after("<p class='line-item left status-color'>" + data[i].status + "</p>")
+            $('.project-status').after("<p class='line-item left " + "status-" +
+           data[i].status + "'>" + data[i].status + "</p>")
             $('.project-team').after("<p class='line-item left'>" + data[i].team + "</p>")
             $('.project-name').after("<p class='line-item left'>" + data[i].projectname + "</p>")
             $('.project-launch').after("<p class='line-item center'>" + data[i].launch + "</p>")

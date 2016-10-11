@@ -83,16 +83,16 @@ p {
   line-height: 50px;
 }
 
-.red {
+.status-Red {
   background-color: red;
   color: red;
 }
-.yellow {
+.status-Yellow {
   background-color: yellow;
   color: yellow;
 }
 
-.green {
+.status-Green {
   background-color: green;
   color: green;
 }
